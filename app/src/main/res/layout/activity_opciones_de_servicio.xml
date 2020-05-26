@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/_fondo3"
+    tools:context=".opciones_de_servicio">
+
+    <Button
+        android:id="@+id/btsiguiente"
+        android:layout_width="131dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:onClick="btreserva"
+        android:text="siguiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chbtinte" />
+
+    <CheckBox
+        android:id="@+id/chbmanicura"
+        android:layout_width="118dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="MANICURA"
+        app:layout_constraintEnd_toStartOf="@+id/chbpedicura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <CheckBox
+        android:id="@+id/chbpedicura"
+        android:layout_width="118dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="PEDICURA"
+        app:layout_constraintEnd_toStartOf="@+id/chbmaquillaje"
+        app:layout_constraintStart_toEndOf="@+id/chbmanicura"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <CheckBox
+        android:id="@+id/chbmaquillaje"
+        android:layout_width="118dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="MAQUILLAJE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chbpedicura"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <CheckBox
+        android:id="@+id/chbtinte"
+        android:layout_width="118dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="TINTE"
+        app:layout_constraintEnd_toStartOf="@+id/chbdepilacion"
+        app:layout_constraintStart_toEndOf="@+id/chbcorte"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <CheckBox
+        android:id="@+id/chbdepilacion"
+        android:layout_width="118dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="DEPILACION"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chbtinte"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <CheckBox
+        android:id="@+id/chbcorte"
+        android:layout_width="118dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="CORTE"
+        app:layout_constraintEnd_toStartOf="@+id/chbtinte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/tvopcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Seleccione los servicios que desea reservar:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="121dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvopcion"
+        app:srcCompat="@mipmap/manicura" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="108dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvopcion"
+        app:srcCompat="@mipmap/pedicura" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="111dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/tvopcion"
+        app:srcCompat="@mipmap/depilado" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="121dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/chbmaquillaje"
+        app:srcCompat="@mipmap/maquillaje" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="131dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/chbpedicura"
+        app:srcCompat="@mipmap/tinte" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="117dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chbmanicura"
+        app:srcCompat="@mipmap/corte1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
