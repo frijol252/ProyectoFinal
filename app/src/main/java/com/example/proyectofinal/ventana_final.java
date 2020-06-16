@@ -46,7 +46,7 @@ public class ventana_final extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"Su reserva ha sido cancelada", Toast.LENGTH_LONG).show();
     }
     public String Rellenar2(){
-        String mensaje = "";//asd
+        String mensaje = "";
         try {
 
             String parte1 = "";
